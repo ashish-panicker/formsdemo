@@ -25,14 +25,10 @@ export class ContactComponent implements OnInit {
 
   createContact(){
     this.newUser = new User(this.userName, this.email, this.phone);
-    console.log(this.newUser);
     this.contacts.push(this.newUser);
-    console.log("There are " + this.contacts.length + " elements in the array.")
-
   }
 
   collapse(){
-    console.log('collpase');
     this.isCollapsed = !this.isCollapsed;
   }
 
